@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ajax1 - Basic</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <body>
-    <h1></h1>
-    <p><button onclick="loadDoc()">Click</button></p>
+<div class="container">
+    <h1>Show content from XML file</h1>
+    <p><button class="btn btn-primary" onclick="loadDoc()">Show message</button></p>
 
-    <div id="content">
-        Content goes here.
+    <div id="content" class="alert alert-secondary" role="alert">
+        The content will be shown here.
     </div>
-
+</div>
     <script>
         function loadDoc() {
             var xhttp = new XMLHttpRequest();
