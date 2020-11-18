@@ -1,0 +1,14 @@
+What is AJAX?
+Asynchronous JavaScript and XML
+
+What is Web 2.0, how many Web 2.0 websites do you know?
+Audience partidipatory web, e.g. Youtube, Instagram, Flickr
+
+Could you explain the AJAX workflow?
+The browser opens an XMLHTTPRequest to the server. The server processes the request (e.g. pulls the data from a database) and then responds. The browser receives the response and displays the result.
+
+What is the XMLHttpRequest object responsible for?
+The XMLHttpRequest object can be used to request data from a web server.
+
+Could you compare XML and JSON data formats?
+Both JSON and XML can be used to receive data from a web server. They have a different format to represent the same data.
