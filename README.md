@@ -1,1 +1,3 @@
-# ajax1
+# AJAX Day One
+
+# Basic Exercise
