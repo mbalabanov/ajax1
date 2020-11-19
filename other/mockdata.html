@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Data</title>
+</head>
+<body>
+    <table id="tablerows">
+    </table>
+
+    <script>
+        let names1 = ["Laura Gilbert", "Haylie Stafford", "Ahmed Lane", "Janet Morrow", "Kallie Hardin", "Lucian Myers", "Lailah Archer", "Camille Hess", "Yurem Lawson", "Jaylah David", "Anika Reilly", "Savanah Lester", "Skylar Donovan", "Kaleb Chavez", "Sonny Wolf", "Neveah Frazier", "Jair Burns", "Dwayne Rivers", "Giada Kennedy", "Trace Gaines", "Makena Brooks", "Landon Gonzales", "Cristopher Mcclain", "Charlie Jimenez", "Kaley Jacobson", "Cameron Mason", "Emmanuel Lynn", "Ricky Orr", "Ashton Espinoza", "Ashlynn Mullen", "Raelynn Mullins", "Laura Newton", "Larissa Holmes", "Sasha Sexton", "Ramon Jacobs"];
+        let names2 = ["The Current Occupant", "Boruto: Naruto the Movie", "The Larva Island Movie", "Scoob!", "Dora and the Lost City of Gold", "Infamous", "Mulan", "The Dalton Gang", "Welcome to Sudden Death", "The Kissing Booth 2", "A Whisker Away", "Battlefield 2025", "Unknown Origins", "Hubie Halloween", "The Mortuary Collection", "ASYLUM: Twisted Horror and Fantasy Tales", "12 Hour Shift", "Psycho-Pass 3: First Inspector", "Terrifier", "Stargirl", "Sonic the Hedgehog", "The Silencing", "Ready Player One", "Operation Christmas Drop", "Barbie: Princess Adventure", "Parasite", "Assassin 33 A.D.", "Boruto: Naruto the Movie", "Venom", "They Live Inside Us", "The Secret Life of Pets 2", "The ABCs of Death", "Death of Me", "Secret Society of Second Born Royals", "Phineas and Ferb The Movie: Candace Against the Universe", "Once Upon a Snowman"];
+        let names3 = ["9510 Indian Summer Street, Ponte Vedra Beach, FL 32082", "44 Hilltop Road, Hagerstown, MD 21740", "196 San Pablo Drive, Oklahoma City, OK 73112", "94 Bald Hill Street, Centereach, NY 11720", "450 Lexington Drive, New Hyde Park, NY 11040", "917 New St., Hobart, IN 46342", "9032 N. Marsh St., Chillicothe, OH 45601", "717 Westminster Lane, Berwyn, IL 60402", "86 Cherry Hill Drive, Aiken, SC 29803", "8595 Pumpkin Hill Drive, Fayetteville, NC 28303", "37 Plymouth Road, Utica, NY 13501", "15 Jennings Dr., Tallahassee, FL 32303", "160 Deerfield Road, Uniontown, PA 15401", "53 Branch Street, Hobart, IN 46342", "879 Rockledge Road, Morrisville, PA 19067", "7190 Fairway Ave., Mountain View, CA 94043", "4 East Sherwood St., New Albany, IN 47150", "322 Beechwood Dr., Graham, NC 27253", "9471 Wentworth St., Glasgow, KY 42141", "8450 Depot Lane, Jeffersonville, IN 47130", "83 College St., Ephrata, PA 17522", "684 Elm Ave., Millington, TN 38053", "52 Fairway St., Wadsworth, OH 44281", "74 Bay St., Saint Joseph, MI 49085", "967 Wild Rose Ave., Nottingham, MD 21236", "7770 Livingston Street, Bozeman, MT 59715", "706 Jones Ave., Suite C, Shelton, CT 06484,", "198 W. Overlook Street, Bonita Springs, FL 34135", "30 S. Pierce Dr., Lake Mary, FL 32746", "7941 Evergreen St., Haines City, FL 33844", "25 Myers St., West Roxbury, MA 02132", "247 Addison Dr., Passaic, NJ 07055", "9 South Foxrun St., Maryville, TN 37803", "8940 South Halifax Street, Saint Louis, MO 63109", "69 Hartford Ave., Piscataway, NJ 08854"];
+        let names4 = ["gtewari@verizon.net", "dwsauder@aol.com", "willg@verizon.net", "hager@hotmail.com", "sumdumass@outlook.com", "jlbaumga@verizon.net", "yfreund@gmail.com", "hwestiii@comcast.net", "mugwump@comcast.net", "hahiss@msn.com", "stefano@hotmail.com", "osaru@att.net", "druschel@yahoo.com", "alfred@icloud.com", "panolex@gmail.com", "mhanoh@yahoo.com", "michiel@sbcglobal.net", "psharpe@comcast.net", "avalon@me.com", "jmcnamara@live.com", "fhirsch@hotmail.com", "smeier@hotmail.com", "duncand@hotmail.com", "magusnet@yahoo.com", "epeeist@comcast.net", "joglo@verizon.net", "thurston@yahoo.ca", "tbusch@live.com", "dmath@me.com", "novanet@yahoo.com", "thowell@yahoo.com", "lishoy@att.net", "mcmillan@aol.com", "hermes@msn.com", "errxn@yahoo.com"];
+        let combined = '';
+
+        for(let i = 0; i < names1.length; i++) {
+            combined += "<tr><td>" + names1[i] + "</td><td>" + names2[i] + "</td><td>" + names3[i] + "</td><td>" + names4[i] + "</td></tr>";
+        }
+
+        document.getElementById('tablerows').innerHTML = combined;
+
+    </script>
+</body>
+</html>

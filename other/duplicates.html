@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duplicates</title>
+</head>
+<body>
+    <script>
+
+        function duplicateCount(text){
+            let counts = {}
+
+            text = text.toLowerCase()
+            text = text.split('')
+
+            for(let i =0; i < text.length; i++){ 
+                if (counts[text[i]]){
+                counts[text[i]] += 1
+                } else {
+                counts[text[i]] = 1
+                }
+            }  
+            console.log(counts)
+        }
+
+        duplicateCount('Indivisibility')
+
+    </script>
+</body>
+</html>
