@@ -26,12 +26,10 @@
         }
 
         function xmlFormatter(xml) {
-            console.log('In formatter function');
-            var i;
             var xmlDoc = xml.responseXML;
             var table = "<tr><th>Title</th><th>Artist</th><th>Country</th><th>Genre</th><th>Year</th></tr>";
             var x = xmlDoc.getElementsByTagName("song");
-            for (i = 0; i < x.length; i++) {
+            for (var i = 0; i < x.length; i++) {
                 
                 table += "<tr><td>" +
                     x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue +
