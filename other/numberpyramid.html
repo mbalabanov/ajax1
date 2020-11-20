@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Pyramid</title>
+</head>
+<body>
+    <script>
+        function rowSumOddNumbers(n) {
+            result = 0;
+	        for (let i = 1; i < n+1; i++) {
+                let temp = (i-1)*i + 1;
+                if(i==n){
+                    result += temp;
+                    for(let j = 1; j < i; j++) {
+                        temp += 2;
+                        result += temp;
+                    };
+                };
+            }
+            return result;
+        };
+        console.log(rowSumOddNumbers(42));
+    </script>
+</body>
+</html>
